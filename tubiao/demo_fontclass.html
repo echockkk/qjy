@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-xiangjiaosuliao"></i>
+                    <div class="name">橡胶塑料</div>
+                    <div class="fontclass">.icon-xiangjiaosuliao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fangzhipige"></i>
+                    <div class="name">纺织皮革</div>
+                    <div class="fontclass">.icon-fangzhipige</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yazi"></i>
+                    <div class="name">鸭子</div>
+                    <div class="fontclass">.icon-yazi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-roll"></i>
+                    <div class="name">卷纸模式</div>
+                    <div class="fontclass">.icon-roll</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gongchengfenleifan"></i>
+                    <div class="name">工程分类-反</div>
+                    <div class="fontclass">.icon-gongchengfenleifan</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-deng"></i>
+                    <div class="name">灯</div>
+                    <div class="fontclass">.icon-deng</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gongyingshang"></i>
+                    <div class="name">供应商</div>
+                    <div class="fontclass">.icon-gongyingshang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gouwuche"></i>
+                    <div class="name">上衣</div>
+                    <div class="fontclass">.icon-gouwuche</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-bao"></i>
+                    <div class="name">包</div>
+                    <div class="fontclass">.icon-bao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gantanhao"></i>
+                    <div class="name">感叹号</div>
+                    <div class="fontclass">.icon-gantanhao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-king"></i>
+                    <div class="name">皇冠</div>
+                    <div class="fontclass">.icon-king</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-rolled"></i>
+                    <div class="name">卷纸,卫生纸,rolled</div>
+                    <div class="fontclass">.icon-rolled</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wuziPX"></i>
+                    <div class="name">屋子14PX</div>
+                    <div class="fontclass">.icon-wuziPX</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fanhui"></i>
+                    <div class="name">返回</div>
+                    <div class="fontclass">.icon-fanhui</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-gengduo"></i>
+                    <div class="name">更多</div>
+                    <div class="fontclass">.icon-gengduo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xiangshang"></i>
+                    <div class="name">向下</div>
+                    <div class="fontclass">.icon-xiangshang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xinxinicon"></i>
+                    <div class="name">齿轮3</div>
+                    <div class="fontclass">.icon-xinxinicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shouji"></i>
+                    <div class="name">手机</div>
+                    <div class="fontclass">.icon-shouji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-kuzi"></i>
+                    <div class="name">裤子</div>
+                    <div class="fontclass">.icon-kuzi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fl-tieqiao"></i>
+                    <div class="name">铁锹</div>
+                    <div class="fontclass">.icon-fl-tieqiao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fenleixuanzhong-"></i>
+                    <div class="name">分类选中</div>
+                    <div class="fontclass">.icon-fenleixuanzhong-</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>
