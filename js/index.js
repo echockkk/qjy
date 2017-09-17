@@ -7,6 +7,13 @@ window.onload = function(){
         autoplayDisableOnInteraction: false,
         loop: true,
     });
+  $('.swiper-container').on('mouseover','span',function(){
+    swiper.stopAutoplay();
+    swiper.slideTo($(this).index()+1,100,false);
+  });
+  $('.swiper-container').on('mouseleave','span',function(){
+    swiper.startAutoplay();
+  });
 
     // tab切换部分
     $('.ch-title li').on('mouseover',function(){
