@@ -101,20 +101,30 @@
 }
 .ch-logosearch .ch-search .xl {
   position: absolute;
-  width: 80px;
+  box-sizing: border-box;
+  width: 81px;
   height: 60px;
   top: 40px;
   left: 0;
   display: none;
   background: #fff;
   z-index: 10;
+  border: 2px solid #0ae;
+  border-top: 0;
+}
+.ch-logosearch .ch-search .xl ul li {
+  border-bottom: 1px solid #ccc;
 }
 .ch-logosearch .ch-search .xl ul li a {
   font-size: 12px;
   height: 30px;
   line-height: 30px;
-  color: #000;
+  color: #666;
   text-align: center;
+  padding-left: 10px;
+}
+.ch-logosearch .ch-search .xl ul li:last-child {
+  border-bottom: 0;
 }
 .ch-logosearch .ch-ewm {
   width: 76px;
@@ -170,10 +180,10 @@
 }
 .ch-nav .chzhu-nav > li:first-child .ch-sidenav {
   width: 200px;
-  height: 307px;
+  height: 311px;
   background: #fff;
   margin-left: -25px;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .ch-nav .chzhu-nav > li:first-child .ch-sidenav li {
   font-size: 14px;

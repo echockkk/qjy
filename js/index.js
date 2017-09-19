@@ -2,13 +2,21 @@ window.onload = function(){
 	//下拉部分
 	$('.ch-cp').on('click',function(){
 		$('.xl').css('display','block');
+		$(this).css('borderBottom','0');
+		$('.xl').css('marginTop','-2px');
+		$('.xl ul li').on('click',function(){
+			var content = $('.ch-cp span').text();
+			$('.ch-cp span').text($(this).children('a').text())
+			$(this).children('a').text(content);
+			$('.xl').css('display','none');
+			$('.ch-cp').css('borderBottom',"2px solid #0ae");
+		});
 	});
-	$('.xl ul li').on('click',function(){
-		var content = $('.ch-cp span').text();
-		$('.ch-cp span').text($(this).children('a').text())
-		$(this).children('a').text(content);
-		$('.xl').css('display','none');
-	})
+	$('.xl').on('mouseleave',function(){
+		$(this).css('display','none');
+		$('.ch-cp').css('borderBottom',"2px solid #0ae");
+	});
+	
 	// 轮播图部分
 	var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
