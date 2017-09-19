@@ -1,4 +1,14 @@
 window.onload = function(){
+	//下拉部分
+	$('.ch-cp').on('click',function(){
+		$('.xl').css('display','block');
+	});
+	$('.xl ul li').on('click',function(){
+		var content = $('.ch-cp span').text();
+		$('.ch-cp span').text($(this).children('a').text())
+		$(this).children('a').text(content);
+		$('.xl').css('display','none');
+	})
 	// 轮播图部分
 	var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -6,6 +16,13 @@ window.onload = function(){
         autoplay: 2500,
         autoplayDisableOnInteraction: false,
         loop: true,
+    });
+    $('.swiper-pagination').on('mouseover','span',function(){
+    	swiper.stopAutoplay();
+    	swiper.slideTo($(this).index()+1,100,false);
+    });
+    $('.swiper-pagination').on('mouseover','span',function(){
+    	swiper.startAutoplay();
     });
 
     // tab切换部分
